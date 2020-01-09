@@ -13,8 +13,9 @@
             </v-list-item>
 
             <v-card-actions >
-                <v-btn text> UPDATE </v-btn>
-                <v-btn text @click='onDelete(memo.id)'> DELETE </v-btn>
+                <v-btn nuxt :to="`/memo/${memo.id}/edit/`"> EDIT </v-btn>
+                <v-btn nuxt :to="`/memo/${memo.id}`"> DETAIL</v-btn>
+                <v-btn  @click='onDelete(memo.id)'> DELETE </v-btn>
             </v-card-actions>
         </v-card>
 
